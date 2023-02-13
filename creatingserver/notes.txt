@@ -1,0 +1,29 @@
+On both requests and responses, Http headers are added to transport metadata from A to B.
+
+HTTP headers let client and server pass additional info along with the HTTP response/request.
+
+case-insensitive name:value
+
+-Request Headers: info about resource to be fetched or about the client requesting said resource
+-Response Headers: info about response like location or about the server providing the resource
+-Representation Headers: info about body of resource like its media type or its encoding/compression
+-Payload Headers: representation-independent information about payload data like content length and encoding used for transport
+
+Also how proxies handle them
+- Connection
+- Keep-Alive
+- Proxy-Authenticate
+- Proxy-Authorization
+- TE
+- Trailer
+- Transfer-Encoding
+- Upgrade 
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+
+Node handles requests in streams by breaking up and reading request in chunks
+Lets you work on chunks before the full request is read and parsed
+Script execution still continues however, it won't stop for the stream
+
+Buffer organizes incoming chunks
+Buffers let you hold multiple chunks and work with them before they are released

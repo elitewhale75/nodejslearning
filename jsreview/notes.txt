@@ -1,0 +1,8 @@
+Javascript runs in broswer
+nodejs can let it run on pc or server
+
+- weakly typed: doesn't force to define type being used for variable or function
+	- able to switch types dynamically
+	- flexible, not type safe
+- OOP
+	- primitive vs reference
